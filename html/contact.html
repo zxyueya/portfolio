@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Xiyue Zhang</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Xiyue Zhang's Resume">
+    <meta name="keywords" content="HTML, CSS, Javascript, Audio Visual Production, Photography, Web Design, Web Development">
+    <meta name="author" content="Xiyue Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    normalize.css-->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--    splide slider-->
+    <link rel="stylesheet" href="../css/plugins/splide/splide.min.css">
+
+    <!--    MMenu-->
+    <link rel="stylesheet" href="../css/plugins/mmenu/mmenu-light.css">
+
+
+    <!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!--    Font Awesome-->
+    <script src="https://kit.fontawesome.com/fbee00d01f.js" crossorigin="anonymous"></script>
+
+    <!--    stylesheet-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body class="contact">
+    <!--   header-->
+    <header id="top my-header">
+        <a id="hamburger-menu" href="#my-menu">
+            <i class="fas fa-2x fa-bars"></i>
+        </a>
+
+        <nav id="my-menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section class="separator">
+            <h1>Get In Touch</h1>
+        </section>
+
+    </header>
+    <!--    END OF header-->
+    <main>
+        <article>
+            <section class="flex-container">
+
+
+                <!--   contact form   -->
+                <form class="item">
+                    <label for="fname">First name</label> <br>
+                    <input type="text"> <br>
+                    <label for="lname">Last name</label> <br>
+                    <input type="text"> <br>
+                    <label for="e-mail">E-mail address</label> <br>
+                    <input type="text"> <br>
+                    <label for="phone">Phone No.</label> <br>
+                    <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+                    <label for="country">Country <br>
+                        <select name="country" id="country">
+                            <option value="canada">Canada</option>
+                            <option value="usa">Unitated States</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                        </select> <br>
+                    </label>
+
+                    <label for="details">Got a project? Send us some details!<br>
+                        <textarea id="poject-details" cols="25" rows="5" placeholder="My project is..."></textarea> <br>
+                    </label>
+
+                    <label for="project-type">Is this a personal or commercial project?<br>
+                        <input type="radio" id="personal" name="project" value="personal"> Personal
+                        <input type="radio" id="commercial" name="project" value="commercial"> Commercial
+                        <br>
+                    </label>
+
+                    <label for="help">How can we help you with your project? <br>
+                        <input type="checkbox" id="logo-design" value="logo-design"> Logo Design <br>
+                        <input type="checkbox" id="branding" value="branding"> Branding <br>
+                        <input type="checkbox" id="package-design" value="package-design"> Package Design <br>
+                        <input type="checkbox" id="web-design" value="web-design"> Web Design <br>
+                        <input type="checkbox" id="web-dev" value="web-development"> Web Development <br>
+                        <input type="checkbox" id="photography" value="photography"> Photography <br>
+                        <input type="checkbox" id="videography" value="videography"> Videography <br>
+                        <input type="submit" class="inquire" value="Inquire">
+                    </label>
+                </form>
+                <!--   END OF form -->
+
+                <!--        social media-->
+                <section class="social item">
+                    <h2>Follow Me</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/zxyueya/" target="_blank">
+                                <i class="fab fa-3x fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/xiyue-zhang-b85644197/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:zhan0722@algonquincollege.com"><i class="fas fa-3x fa-envelope"></i></a>
+                        </li>
+                    </ul>
+
+                </section>
+            </section>
+
+        </article>
+    </main>
+
+
+    <!--   footer-->
+    <footer>
+        <p>All Rights Reserved. &copy; Copyright 2021.</p>
+    </footer>
+    <!--END OF footer-->
+    <div class="btn-top">
+        <a href="#top"><i class="fas fa-2x fa-angle-double-up"> </i></a>
+    </div>
+
+
+
+
+
+    <!--    1. Load Splide JS-->
+    <script src="../js/splide/splide.min.js"></script>
+
+
+    <!--  MMenu Plugin-->
+    <script src="../js/mmenu/mmenu-light.js"></script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new MmenuLight(
+                    document.querySelector("#my-menu"),
+                    "(max-width: 768px)"
+                );
+
+                const navigator = menu.navigation();
+                const drawer = menu.offcanvas();
+
+                document.querySelector("a[href='#my-menu']")
+                    .addEventListener("click", (evnt) => {
+                        evnt.preventDefault();
+                        drawer.open();
+                    });
+            }
+        );
+    </script>
+    <!--    END OF MMenu Plugin-->
+
+
+</body>
+
+</html>

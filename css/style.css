@@ -1,0 +1,1234 @@
+/*
+    color scheme:
+        body-text:#625B57
+        link:#878AA1
+        headings:#51615E
+        #709fb0
+        #a7c5eb
+
+
+    Fonts: 
+        Headings: 
+            font-family: 'Halant', serif;
+        Body Text: 
+            font-family: 'Nunito Sans', sans-serif;
+*/
+
+
+/*General*/
+body {
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
+    margin: 0;
+    color: #625B57;
+    font-size: 1.4rem;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+main p,
+ul li {
+    line-height: 2rem;
+}
+
+hr {
+    border: 1px dashed #BDB1A9;
+}
+
+/*Navigations*/
+nav {
+    background-color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+nav ul li {
+    padding: 1.5rem;
+}
+
+
+nav ul li a {
+    color: #878AA1;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    background-color: #878AA1;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    display: none;
+}
+
+
+
+/*mmenu*/
+#hamburger-menu {
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+    display: block;
+}
+
+#hamburger-menu i {
+    color: #878AA1;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+
+#hamburger-menu i:hover {
+    background:#f1f1f1;
+    padding: 1rem;
+
+    }
+
+    
+#my-header {
+    padding: 0;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+
+/*Headings*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Halant', 'Times New Roman', serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #87A19C;
+}
+
+h4 {
+    font-size: 1.4rem;
+    color: #878AA1;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/*Home Page*/
+
+/*----------SLIDER-----------*/
+
+.splide__track img {
+    max-width: 100%;
+}
+
+.hero-slider {
+    position: relative;
+}
+
+.hero-slider .splide__track h3 {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    color: white;
+    text-shadow: 1px 1px #212121;
+}
+
+/*--------END OF SLIDER-------*/
+
+
+
+/*--------separator-----------*/
+.separator.services {
+    background-color:  #709fb0;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3rem;
+
+}
+
+.separator.services h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px #212121;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+
+}
+
+.separator.portfolio {
+    background-color:  #709fb0;
+}
+
+.separator.portfolio h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px #212121;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+
+}
+
+
+
+
+
+
+
+/*----------END OF separator---------*/
+
+
+.services .item {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 1.5rem;
+    margin: 2rem;
+}
+
+.services .item h3 {
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 8rem;
+}
+
+.services .item i::before {
+    background-color: #87A19C;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    text-shadow: 3px 3px #212121;
+}
+
+
+
+
+
+.portfolio img {
+    max-width: 100%;
+    
+}
+
+.portfolio .item a {
+    font-size: 1.5rem;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0.3rem;
+    background-color: #DCDCDC;
+    box-shadow: 2px 2px 5px 2px #888888;
+    color: #424961;
+    display: block;
+    max-width: 10rem;
+}
+
+
+
+
+
+
+/*END OF Home Page*/
+
+
+
+
+
+
+/*Resume Page*/
+
+.resume img {
+    max-width: 100%;
+    border-radius: 10%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+h1.resume {
+    color: #ECE6DE;
+    text-shadow: 2px 2px #6E6B67;
+}
+
+.one-st-intro {
+    text-align: center;
+}
+
+.resume p {
+    font-size: 1.55rem;
+    color: #625B57;
+}
+
+.responsibilities {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/*font awesome icon*/
+.job-info {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.job-info li p {
+    display: inline;
+}
+
+/*End of font awesome icon*/
+
+.work-exp h2,
+.edu h2 {
+    text-decoration-line: underline;
+    text-align: center;
+    color: #51615E;
+    text-shadow: 0px 0.5px 0px;
+}
+
+.edu h2 {
+    margin-top: 3rem;
+}
+
+aside {
+    margin-top: 3rem;
+    background-color: #51615E;
+    color: #ECE6DE;
+    padding: 1.2rem;
+}
+
+aside h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+aside a {
+    color: #ECE6DE;
+    display: block;
+    text-align: center;
+}
+
+aside a:hover {
+    color: #212121;
+}
+
+
+/* blockquote styles taken frome css-tricks.com
+    direct link:https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/*/
+
+aside blockquote {
+    color: #ECE6DE;
+}
+
+blockquote {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 10px solid;
+    margin: 1.5rem 0.75rem 1rem 0.75rem;
+    padding: 1rem 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+blockquote::before,
+blockquote:after {
+    color: #ccc;
+    content: open-quote;
+    font-size: 3rem;
+    line-height: 0.1rem;
+    margin-right: 0;
+    vertical-align: -1rem;
+}
+
+blockquote::after {
+    content: close-quote;
+    vertical-align: -1.2rem;
+}
+
+blockquote i {
+    position: absolute;
+    top: -2.5rem;
+    right: -0.5rem;
+}
+
+aside p {
+    text-align: right;
+}
+
+/*back to Top button*/
+.btn-top {
+    background-color: #EBEDED;
+    padding: 0.6rem;
+    width: 1.6rem;
+    display: inline-block;
+    box-shadow: 1px 1px #212121;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    animation-name: bouncein;
+    animation-duration: 2s;
+}
+
+@keyframes bouncein {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.btn-top i {
+    width: 65%;
+}
+
+.btn-top a {
+    color: #51615E;
+    text-shadow: 2px 1px #212121;
+}
+
+
+
+
+/* END OF blockquote taken form css-tricks.com */
+
+/*About Page*/
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+
+.intro img,
+.hobbies img {
+    height: auto;
+    max-width: 100%;
+}
+
+.about footer {
+    padding-top: 3rem;
+    clear: both;
+}
+
+
+/*Contact Page*/
+
+/*Separator*/
+.contact .separator {
+    background-color: #51615E;
+    background-image: url(../images/phone.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 3rem;
+}
+
+.contact .separator h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px #212121;
+
+
+}
+
+
+
+.contact h1 {
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+form {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    box-shadow: 10px 5px 8px 5px #888888;
+    background-color: #D6DFEB;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+label {
+    color: #424961;
+}
+
+input {
+    border: none;
+}
+
+::placeholder {
+    color: #A39480;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+input[type=submit] {
+    font-size: 1.5rem;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0.3rem;
+    background-color: #DCDCDC;
+    box-shadow: 2px 2px 5px 2px #888888;
+    color: #424961;
+    display: block;
+    animation-name: change-color;
+    animation-duration: 3s;
+}
+
+@keyframes change-color {
+    from {
+        background-color: blue;
+        color: palevioletred;
+    }
+    to {
+        background-color: #DCDCDC;
+        color: #424961;
+    }
+    
+}
+
+input[type=submit]:hover {
+    background-color: floralwhite;
+    color: #424961;
+    cursor: pointer;
+}
+
+/*End of form*/
+
+/*social*/
+.social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.social ul li a {
+    color: #51615E;
+    text-shadow: 1px 1px #212121;
+}
+
+.social ul li a:hover {
+    color: #212121;
+}
+
+
+.contact aside {
+    clear: both;
+
+}
+
+.contact .map {
+    display: none;
+}
+
+
+
+/*footer*/
+footer {
+    text-align: center;
+    font-weight: 600;
+}
+
+/*---------------Portfolio Page-----------------*/
+
+.portfolio-page .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.portfolio-page .flex-container .item {
+    height: 10rem;
+    width: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 2px 2px #212121;
+    text-decoration: none;
+}
+
+.portfolio-page .flex-container .item.portfolio-web-design {
+    background-image: url(../images/web-design.jpg);
+}
+
+.portfolio-page .flex-container .item.portfolio-ux {
+    background-image: url(../images/ux-design.jpg);
+}
+
+.portfolio-page .flex-container .item.portfolio-gd {
+    background-image: url(../images/graphic.jpg);
+}
+
+
+.portfolio-page .flex-container .item.portfolio-photo {
+    background-image: url(../images/photography.jpg);
+    background-position: bottom;
+}
+
+.portfolio-page .flex-container .item.portfolio-video {
+    background-image: url(../images/videography.jpg);
+}
+
+.portfolio-page .flex-container .item.portfolio-audio {
+    background-image: url(../images/audio-production.jpg);
+}
+
+.portfolio-page .flex-container .item.portfolio-writing {
+    background-image: url(../images/creative-writing.jpg);
+}
+
+.portfolio-page .flex-container .item h3 {
+    color: white;
+    background-color:#709fb0;
+    position: absolute;
+    right: 0;
+    padding: 0.3rem;
+    text-shadow: 2px 2px #212121;
+ 
+}
+
+/*Transition*/
+.portfolio-page .flex-container a {
+    transition-duration: 0.5s;
+    transition-timing-function: ease
+    
+}
+
+.portfolio-page .flex-container a:hover {
+    padding: 1.2rem;
+}
+
+
+/*Animation */
+.index .portfolio a {
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+
+
+
+/***************************************************
+   Landscape phone and up
+***************************************************/
+@media only screen and (min-width: 480px) {
+    header {
+        padding: 3rem;
+
+
+    }
+
+    .about aside a,
+    aside section a {
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+
+
+
+    /* Resume page */
+    .resume h1 {
+        font-size: 2.5rem;
+        padding-top: 2rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    p,
+    ul li {
+        font-size: 1.4rem;
+    }
+
+    aside blockquote {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+
+    blockquote {
+        position: relative;
+    }
+
+    blockquote i {
+        position: absolute;
+        right: -1rem;
+        top: -3.5rem;
+    }
+
+
+    /*    about page*/
+    .intro img,
+    .hobbies img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    
+    /*    contact page*/
+    form {
+        font-size: 1.4rem;
+    }
+
+    .social h2 {
+        padding-top: 1.5rem;
+    }
+
+}
+
+
+
+/***************************************************
+    Custome min-width: 700px
+***************************************************/
+@media only screen and (min-width: 700px) {
+    
+        .services .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+}
+
+
+
+/***************************************************
+    Customized min-width: 730px
+***************************************************/
+@media only screen and (min-width: 730px) {
+
+   .services .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+}
+
+
+/***************************************************
+    Portrait tablet and up
+***************************************************/
+@media only screen and (min-width: 768px) {
+    
+/*    general*/
+    nav {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        box-shadow: 0 1px 3px;
+
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p,
+    li,
+    label,
+    input,
+    select,
+    textarea {
+        font-size: 1.4rem;
+    }
+
+
+ 
+/*    Home Page*/
+    
+    /*Portfolio grid*/
+    article.portfolio .item {
+    display: grid;
+    grid-template-columns: minmax(10%,50%) minmax(10%,50%);
+    grid-template-rows: repeat(6);
+    grid-gap: 0.5rem;
+    }
+    
+    article.portfolio .item img {
+        grid-column: 1/ 3;
+        grid-row: 1 / 2;
+        
+    }
+    
+    article.portfolio .item h3.type {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+        
+    }
+    
+    article.portfolio .item p.type {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        
+    }
+    
+    article.portfolio .item h3.project {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    article.portfolio .item p.project {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        
+    }
+    
+    article.portfolio .item h3.client {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5; 
+    }
+    
+    article.portfolio .item p.client {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    article.portfolio .item h3.description {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    article.portfolio .item p.description {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    
+    article.portfolio .item a {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+    }
+    
+    article.portfolio {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    
+    article.portfolio .item {
+        grid-column: 2 / 3;
+    }
+
+    /*END OF Portfolio grid*/
+
+
+/*    END OF Home Page*/
+
+    
+    
+    /*    Resume page*/
+
+
+    header {
+        margin-top: 3rem;
+
+        position: relative;
+    }
+    
+    .resume img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        width: 50rem;
+
+    
+   
+        }
+    
+    
+
+
+
+    /* about page */
+    .intro h2 {
+        padding-top: 3rem;
+    }
+
+    .intro img,
+    .hobbies img {
+        float: left;
+        width: 55%;
+        margin-right: 3rem;
+
+    }
+
+    .hobbies img {
+        float: right;
+        margin-right: 0;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /*contact page  */
+    .contact form {
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+        margin-right: 10%;
+        padding: 2rem;
+    }
+    
+    .contact .separator {
+        margin-top: 0; 
+    }
+    
+    
+    .contact .flex-container {
+        display: inline-flex;
+    }
+    
+  
+    
+    
+    
+    
+    .contact .map {
+        display: block;
+    }
+    
+    
+    
+    
+    /*    portfolio page*/
+    .portfolio-page .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+    .portfolio-page .flex-container .item {
+        height: 10rem;
+        width: 15rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1rem;
+        position: relative;
+        box-shadow: 2px 2px #212121;
+        text-decoration: none;
+        align-self: center;
+    }
+    
+    .portfolio-page .flex-container .item.portfolio-web-design {
+        background-image: url(../images/web-design.jpg);
+        flex-basis: 100%;
+    }
+
+    .portfolio-page .flex-container .item.portfolio-ux {
+        background-image: url(../images/ux-design.jpg);
+        flex-basis: 100%;
+    }
+
+    .portfolio-page .flex-container .item.portfolio-gd {
+        background-image: url(../images/graphic.jpg);
+        flex-basis: 100%;
+    }
+
+
+    .portfolio-page .flex-container .item.portfolio-photo {
+        background-image: url(../images/photography.jpg);
+        background-position: bottom;
+        flex-basis: 100%;
+    }
+
+    .portfolio-page .flex-container .item.portfolio-video {
+        background-image: url(../images/videography.jpg);
+        flex-basis: 100%;
+        
+    }
+
+    .portfolio-page .flex-container .item.portfolio-audio {
+       background-image: url(../images/audio-production.jpg);
+       flex-basis: 100%; 
+    }
+
+    .portfolio-page .flex-container .item.portfolio-writing {
+        background-image: url(../images/creative-writing.jpg);
+        flex-basis: 100%;
+        
+    }
+
+    
+    
+
+}
+
+/***************************************************
+   Landscape desktop (17”) and up
+***************************************************/
+
+    @media only screen and (min-width: 960px) {
+
+
+        p,
+        li,
+        label,
+        input,
+        select,
+        textarea {
+            font-size: 1.2rem;
+        }
+
+        .resume h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+        }
+           .resume img {
+            max-width: 50%;
+               display: block;
+        }
+
+
+
+        /* contact page */
+        
+  
+        .contact form {
+            width: auto;
+       
+            
+        }
+        
+        
+        
+        .contact .map {
+            display: block;
+        }
+        
+        
+/*        Portfolio Page*/
+        .portfolio-page .flex-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+    }
+
+
+        .portfolio-page .flex-container .item {
+            height: 10rem;
+            width: 15rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 1rem;
+            position: relative;
+            box-shadow: 2px 2px #212121;
+            text-decoration: none;
+            flex-grow: 1;
+            flex-shrink: 1;
+    }
+        .portfolio-page .flex-container .item.portfolio-web-design {
+            background-image: url(../images/web-design.jpg);
+            flex-basis: auto;
+            flex-grow: 6;
+    }
+
+        .portfolio-page .flex-container .item.portfolio-ux {
+            background-image: url(../images/ux-design.jpg);
+            flex-basis: auto;
+            flex-grow: 3;
+    }
+
+        .portfolio-page .flex-container .item.portfolio-gd {
+            background-image: url(../images/graphic.jpg);
+            flex-basis: 100%;
+    }
+
+
+        .portfolio-page .flex-container .item.portfolio-photo {
+            background-image: url(../images/photography.jpg);
+            background-position: bottom;
+            flex-basis: auto;
+            flex-shrink: 3;
+
+    }
+
+        .portfolio-page .flex-container .item.portfolio-video {
+            background-image: url(../images/videography.jpg);
+            flex-basis: auto;
+            flex-shrink: 3;
+    
+    }
+
+        .portfolio-page .flex-container .item.portfolio-audio {
+           background-image: url(../images/audio-production.jpg);
+            flex-basis: auto;
+         
+    }
+
+    .portfolio-page .flex-container .item.portfolio-writing {
+        background-image: url(../images/creative-writing.jpg);
+        flex-basis: 100%;
+    
+    }
+
+    }
+    
+    
+/***************************************************
+   Customize min-width: 1040 px
+***************************************************/
+    @media only screen and (min-width: 1160px) {
+         .services .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+        }
+        
+        
+        
+    }
+
+
+
+/***************************************************
+   Widescreen desktop (24”) and up
+***************************************************/
+
+    @media only screen and (min-width: 1160px) {
+
+        p,
+        ul li,
+        label,
+        input,
+        select,
+        textarea {
+            font-size: 1.2rem;
+        }
+
+        .resume h1 {
+            font-size: 4rem;
+        }
+        
+        .resume img {
+            max-width: 30%;
+        }
+
+        h2 {
+            font-size: 3.4rem;
+        }
+
+        header img {
+            padding: 1rem;
+
+        }
+
+        header section p {
+            padding: 2rem;
+        }
+
+        .hobbies h2 {
+            padding-top: 7rem;
+        }
+
+        .intro img,
+        .hobbies img {
+            height: auto;
+            width: 50%;
+
+        }
+        
+        .contact form {
+            margin-left: 25rem;
+        }
+
+        .contact .map {
+            display: block;
+        }
+    }
+    
+    
+/***************************************************
+   Customize min-width: 1445px
+***************************************************/
+    
+    @media only screen and (min-width: 1445px) {
+        
+        .services .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+        } 
+    }
+
+
+
+
+

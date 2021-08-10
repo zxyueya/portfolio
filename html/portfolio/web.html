@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Xiyue's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Xiyue Zhang's Resume">
+    <meta name="keywords" content="HTML, CSS, Javascript, Audio Visual Production, Photography, Web Design, Web Development">
+    <meta name="author" content="Xiyue Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    normalize.css-->
+    <link rel="stylesheet" href="../../css/normalize.css">
+
+    <!--    splide slider-->
+    <link rel="stylesheet" href="../../css/plugins/splide/splide.min.css">
+
+    <!--    MMenu-->
+    <link rel="stylesheet" href="../../css/plugins/mmenu/mmenu-light.css">
+
+
+    <!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!--    Font Awesome-->
+    <script src="https://kit.fontawesome.com/fbee00d01f.js" crossorigin="anonymous"></script>
+
+    <!--    stylesheet-->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <!--  header-->
+    <header id="top my-header">
+        <a id="hamburger-menu" href="#my-menu">
+            <i class="fas fa-2x fa-bars"></i>
+        </a>
+
+        <nav id="my-menu">
+            <ul>
+                <li>
+                    <a href="../../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="../portfolio.html">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="../resume.html">Resume</a>
+                </li>
+
+
+
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--    End OF header-->
+
+    <main>
+        <section class="separator portfolio">
+            <h2>Web Design</h2>
+        </section>
+
+        <br>
+        <br>
+
+        <article class="portfolio">
+            <section class="item">
+                <img src="../../images/web-pj1.png" alt="">
+
+
+                <h3 class="type">Type</h3>
+                <p class="type">Web Design &amp; Web Development</p>
+
+                <h3 class="project">Project Title</h3>
+                <p class="project">Fresh Morning Coffee</p>
+
+                <h3 class="client">Client</h3>
+                <p class="client">College Project</p>
+
+                <h3 class="description">Description</h3>
+                <p class="description">
+                    Fresh Morning is a coffee shop located in Ottawa, Canada. It was founded in 2021 by Xiyue Zhang. Fresh Morning uses natural coffee beans,provides delicious meals, pastries and a variety of secret special beverages. As the seasons change, there are also a lot of afternoon tea sets with different flavors.
+                </p>
+            </section>
+        </article>
+        <br>
+        <!--    footer-->
+        <footer>
+            <p>All Rights Reserved. &copy; Copyright 2021.</p>
+        </footer>
+        <!--    END OF footer-->
+        <div class="btn-top">
+            <a href="#top"><i class="fas fa-2x fa-angle-double-up"> </i></a>
+        </div>
+
+
+
+    </main>
+
+
+    <!--  MMenu Plugin-->
+    <script src="../../js/mmenu/mmenu-light.js"></script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new MmenuLight(
+                    document.querySelector("#my-menu"),
+                    "(max-width: 768px)"
+                );
+
+                const navigator = menu.navigation();
+                const drawer = menu.offcanvas();
+
+                document.querySelector("a[href='#my-menu']")
+                    .addEventListener("click", (evnt) => {
+                        evnt.preventDefault();
+                        drawer.open();
+                    });
+            }
+        );
+    </script>
+    <!--    END OF MMenu Plugin-->
+
+</body>
+</html>
